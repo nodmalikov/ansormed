@@ -50,6 +50,26 @@ a {
     text-decoration: none;
 }
 
+/* LOADER */
+#loader {
+    border: 12px solid var(--background-color);
+    border-top: 12px solid var(--component-color);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+
+.center {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 110;
+}
+
 /* CONTAINER */
 .container {
     width: 100%;

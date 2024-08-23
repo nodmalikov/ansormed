@@ -50,3 +50,18 @@ window.onscroll = function() {
 
 // OPTIONAL: UPDATE MAIN CONTENT'S MARGIN IF THE HEADER'S HEIGHT CHANGES DYNAMICALLY
 new ResizeObserver(updateMainContentMargin).observe(elHeader);
+
+// LOADER
+document.onreadystatechange = function () {
+    if (document.readyState !== "complete") {
+        document.querySelector(
+            "body").style.visibility = "hidden";
+        document.querySelector(
+            "#loader").style.visibility = "visible";
+    } else {
+        document.querySelector(
+            "#loader").style.display = "none";
+        document.querySelector(
+            "body").style.visibility = "visible";
+    }
+};
