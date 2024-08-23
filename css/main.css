@@ -70,6 +70,12 @@ a {
     z-index: 110;
 }
 
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* CONTAINER */
 .container {
     width: 100%;
